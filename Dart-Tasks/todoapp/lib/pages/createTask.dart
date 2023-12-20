@@ -14,11 +14,6 @@ class _CreateTaskState extends State<CreateTask> {
         appBar: AppBar(
           title: const Center(child: Text("Create Task")),
           backgroundColor: Colors.white,
-          leading: const Icon(
-            Icons.keyboard_arrow_left_sharp,
-            color: Color.fromRGBO(238, 111, 87, 1.0),
-            size: 50,
-          ),
           actions: [
             IconButton(
               icon: const Icon(
@@ -150,7 +145,7 @@ class _CreateTaskState extends State<CreateTask> {
                             ),
                           ),
                           child: const Text(
-                            "Get Started",
+                            "Add Task",
                             style: TextStyle(color: Colors.white),
                           ))))
                 ]),

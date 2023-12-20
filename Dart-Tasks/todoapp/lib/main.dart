@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: GetStarted(),
+      // home: GetStarted(),
+      home: TodoList(),
+      // home: CreateTask(),
+      // home: TaskDetail(),
     );
   }
 }

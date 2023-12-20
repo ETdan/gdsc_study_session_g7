@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapp/pages/todolist.dart';
 
 class GetStarted extends StatefulWidget {
   const GetStarted({super.key});
@@ -26,7 +27,10 @@ class _getStartedState extends State<GetStarted> {
           Container(
             width: 200,
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => TodoList()));
+                },
                 style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all<Color>(Colors.blue),
